@@ -5,14 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Deply Example</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        let showSpoil = false;
+        function spoil(){
+            showSpoil = !showSpoil;
+            if (showSpoil){
+                document.getElementById('spoiler').innerHTML="Grogu";
+                document.getElementById('spoiler').style.textDecoration="none";
+            }
+            else{
+                document.getElementById('spoiler').innerHTML="Baby Yoda";
+                document.getElementById('spoiler').style.textDecoration="line-through";
+            }
+            
+        }
+    </script>
 </head>
 <body>
     <div class="container">        
         <h1>Example Git Deploy Page</h1>
         <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/11/Baby-Yoda-Eating-Macarons-In-The-Mandalorian.jpg?q=50&fit=crop&w=960&h=500">
         <h2>
-            You know you love Baby Yoda! 
+            You know you love <span id="spoiler">Baby Yoda</span>! 
         </h2>
+        <a onclick="spoil()">click to show/hide spoiler</a>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perferendis est eum ipsum adipisci, qui optio ducimus quidem rem natus! Iusto est iure dicta ipsa culpa commodi, exercitationem voluptatibus quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis praesentium reiciendis molestiae eum velit et modi voluptatibus, nesciunt, nobis dolor veniam, voluptatem repellendus. Est ex eos ea debitis sint?
         </p>
