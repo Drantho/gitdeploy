@@ -1,0 +1,25 @@
+body{
+    background-color: #eeeeee;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4);    
+    background-color: white;
+    padding: 25px 0;    
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    margin: 15px 100px;
+}
